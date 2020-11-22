@@ -1,36 +1,4 @@
-// window.addEventListener("keydown", (event) => {
-//   if (
-//     event.keyCode === 8 ||
-//     event.keyCode === 9 ||
-//     event.keyCode === 20 ||
-//     event.keyCode === 13
-//   ) {
-//     document
-//       .querySelector('#keyboard .fin[data="' + event.keyCode + '"]')
-//       .classList.add("silver");
-//     window.addEventListener("keyup", () => {
-//       document
-//         .querySelector('#keyboard .fin[data="' + event.keyCode + '"]')
-//         .classList.remove("silver");
-//     });
 
-//     if (event.keyCode === 9) {
-//       event.preventDefault();
-//       document
-//         .querySelector("textarea")
-//         .append("\u00A0" + "\u00A0" + "\u00A0" + "\u00A0");
-//     }
-//     if (event.keyCode === 13) {
-//       let enter = document.createElement("br");
-//       document.querySelector("textarea").append(enter);
-//     }
-//     if (event.keyCode === 8) {
-//       document.querySelector("textarea").prepend("\u0008");
-//     }
-//   }
-//     console.log(event);
-
-// });
 
 let textArea = document.querySelector(".textarea");
 
