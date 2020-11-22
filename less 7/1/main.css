@@ -1,0 +1,76 @@
+            * {
+                padding: 0;
+                margin: 0;
+                background-size: 100%;
+            }
+            p {
+                color: red;
+                font-size: 30px;
+                font-weight: bold;
+                padding: 10px;
+            }
+            p:hover {
+                color: oran;
+                font-size: 20px;
+                font-weight: 100;
+            }
+            #top {
+                width: 380px;
+                position: absolute;
+                left: 650px;
+                top: 300px;
+                display: none;
+            }
+            img {
+                width: 120px;
+                height: 80px;
+                border: 1px solid black;
+                margin-bottom: -5px;
+                margin-right: -5px;
+            }
+            #top>div {
+                display: inline-block;
+                border-bottom: 43px;
+            }
+            #top1>div {
+                width: 120px;
+                height: 80px;
+                display: inline-block;
+                margin-bottom: -5px;
+                margin-right: -5px;
+                border: 1px solid black;
+            }
+            #top1 {
+                width: 380px;
+                position: absolute;
+                left: 650px;
+                top: 300px;
+                display: none;
+            }
+            .color1 {
+                background: #0062d1;
+            }
+            .color2 {
+                background: #05e335;
+            }
+            .color3 {
+                background: #e37b05;
+            }
+            .color4 {
+                background: #e3dc05;
+            }
+            .color5 {
+                background: #f00;
+            }
+            .color6 {
+                background: #c9c9c9;
+            }
+            .color7 {
+                background: #9f00e8;
+            }
+            .color8 {
+                background: #e800d1;
+            }
+            .color9 {
+                background: #000
+            }
