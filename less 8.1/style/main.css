@@ -1,0 +1,101 @@
+@import url(reset.css);
+
+
+.conteiner {
+    width: 900px;
+    height: 900px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.box-conteiner {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.header {
+    width: 100%;
+    height: 40px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding-top:20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+
+}
+input[type=text],input[type=email]{
+    width: 400px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid rgb(143, 143, 143);
+    border-radius: 5px;
+
+
+    
+}
+
+select option{
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+}
+
+
+
+form[name=txt-form]{
+    margin:20px
+}
+form p {
+margin:10px 0 10px 0 ; 
+font-family: sans-serif;
+}
+  
+.box-forms {
+}
+.box-chekboxes {
+    margin-left: -275px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+
+
+}
+.box-setion select {
+    width: 409px;
+    height: 35px;
+    display: block;
+    font-family: sans-serif;
+    border: 1px solid rgb(143, 143, 143);
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.box-check-txt {
+    margin-left: -100px;
+    margin-top: 10px;
+    font-family: sans-serif;
+
+}
+.box-submit {
+}
+input[type=submit]{
+    width: 409px;
+    height:35px;
+    border-radius: 5px;
+    margin-top:20px;
+    background:green;
+    font-weight: bold;
+    color:#fff;
+    font-size: 15px;
+
+}
