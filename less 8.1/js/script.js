@@ -1,28 +1,39 @@
+//---------Звернення
 const sub = document.forms['sub'],
-    signUp = document.querySelector('.container-fa'),
-    outUp = document.querySelector('.conteiner'),
     firstName = document.forms['firstName'],
     secondName = document.forms['secondName'],
     emailAddress = document.forms['emailAddress'],
+    signUp = document.querySelector('.container-fa'),
+    outUp = document.querySelector('.conteiner'),
     fName = document.querySelector('.fName'),
     sName = document.querySelector('.sName'),
-    eMail = document.querySelector('.eMail');
+    eMail = document.querySelector('.eMail'),
+    proF = document.querySelector('.proF'),
+    select = document.getElementById('sel'),
+    check = document.getElementById('check'),
+    len = sel.options.length;
 
+
+
+//--------Дії при кліку
 
 sub.submit.addEventListener("click", (e) => {
     e.preventDefault()
-    fName.textContent = firstName.line1.value
-    sName.textContent = secondName.line2.value
-    eMail.textContent = emailAddress.line3.value
-
-
-    clikRadio()
-    clickSelect()
-
     signUp.classList.add('viss')
     outUp.classList.add('viss1')
+
+    //----Підключення Ф
+    clickSel()
+    clikRadio()
+    subCheck()
+    valFirstName()
+    valSecondName()
+    valEmail()
+
+
 })
 
+//-------Радіо при кліку
 
 function clikRadio() {
     if (event.target.value === 'Woman') {
@@ -37,10 +48,59 @@ function clikRadio() {
     }
 }
 
-function clickSelect(){
 
-       console.log(event.target)
+//--------Вибір селектора
+function clickSel() {
+    let res
+    for (let i = 0; i < len; i++) {
+        res = sel.options[i]
+        if (res.selected === true) {
+            proF.textContent = res.value
 
+        }
+        if (res.value === 'Choose...')
+            proF.textContent = ''
+    }
 }
 
+//-------Клік без чеку
 
+function subCheck() {
+    if (check.checked === false) {
+        outUp.style.display = 'block'
+        alert('Plese check checkbox')
+    } else if (check.checked === true) {
+        outUp.style.display = 'none'
+
+    }
+}
+
+//---------Валідатори
+
+function valFirstName() {
+    if (firstName.line1.value === '' || firstName.line1.value === null) {
+        outUp.style.display = 'block'
+        alert('Plese enter you first Name')
+    } else {
+        fName.textContent = firstName.line1.value
+    }
+}
+
+function valSecondName() {
+    if (secondName.line2.value === '' || secondName.line2.value === null) {
+        outUp.style.display = 'block'
+        alert('Plese enter you first Name')
+    } else {
+        sName.textContent = secondName.line2.value
+    }
+}
+
+function valEmail() {
+    if (emailAddress.line3.value == !'@') {
+        outUp.style.display = 'block'
+        alert('Plese enter valid email')
+    } else {
+        eMail.textContent = emailAddress.line3.value
+
+    }
+}

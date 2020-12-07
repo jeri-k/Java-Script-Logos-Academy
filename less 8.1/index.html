@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
     <link rel="stylesheet" href="style/main.css" />
     <title>Document</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="conteiner">
-      <div class="box-conteiner">
-        <div class="header">Create your account</div>
-        <div class="box-forms">
-          <form name="firstName">
-            <p>First Name</p>
-            <input type="text" name="line1" placeholder="type here.." />
-          </form>
-          <form name="secondName">
-            <p>Second Name</p>
-            <input type="text" name="line2" placeholder="type here.." />
-          </form>
-          <form name="emailAddress">
-            <p>Email address</p>
-            <input type="email" name="line3" placeholder="enter email" />
-          </form>
+        <div class="box-conteiner">
+            <div class="header">Create your account</div>
+            <div class="box-forms">
+                <form name="firstName">
+                    <p>First Name</p>
+                    <input type="text" name="line1" placeholder="type here.." />
+                </form>
+                <form name="secondName">
+                    <p>Second Name</p>
+                    <input type="text" name="line2" placeholder="type here.." />
+                </form>
+                <form name="emailAddress">
+                    <p>Email address</p>
+                    <input type="email" name="line3" placeholder="enter email"  />
+                </form>
+            </div>
+            <div class="box-chekboxes">
+                <form name="narut" onclick="clikRadio()">
+                    <input type="radio" name="lineR1" value="Woman" id="W" /> <label for="W">Woman</label>
+                    <input type="radio" name="lineR1" value="Man" id="M" /> <label for="M">Man</label>
+                </form>
+            </div>
+            <div class="box-setion">
+                <select id="sel">
+                    <option value="Choose..." selected="selected">Choose...</option>
+                    <option value="Frontend" ">Frontend</option>
+            <option value=" Backend">Backend</option>
+                    <option value="QC/QA">QC/QA</option>
+                </select>
+            </div>
+            <div class="box-check-txt">
+                <form name='checkb'>
+                    <input type="checkbox" id="check" />
+                    <label for="check">I adree all statements in Terms of service</label>
+                </form>
+            </div>
+            <div class="box-submit">
+                <form action="" name="sub">
+                    <input type="submit" class="sube" name="submit" value="Sign Up" />
+                </form>
+            </div>
         </div>
-        <div class="box-chekboxes">
-            <form  name="narut" onclick="clikRadio()">
-          <input type="radio" name="lineR1" value="Woman" id="W"  /> <label for="W">Woman</label>
-          <input type="radio" name="lineR1" value="Man" id="M"  /> <label for="M">Man</label>
-        </form>
-        </div>
-        <div class="box-setion">
-          <select id="sel" onclick="clickSelect()">
-            <option value="Choose..." sel>Choose...</option>
-            <option value="Frontend" ">Frontend</option>
-            <option value="Backend">Backend</option>
-            <option value="QC/QA">QC/QA</option>
-          </select>
-        </div>
-        <div class="box-check-txt">
-          <form action="">
-            <input type="checkbox" id="check" />
-            <label for="check"
-              >I adree all statements in Terms of service</label
-            >
-          </form>
-        </div>
-        <div class="box-submit">
-          <form action="" name="sub">
-            <input type="submit" name="submit" value="Sign Up" />
-          </form>
-        </div>
-      </div>
     </div>
     <div class="container-fa">
-      <div class="box-container-fa">
-        <div class="header-fa">
-          <div class="add-img"></div>
+        <div class="box-container-fa">
+            <div class="header-fa">
+                <div class="add-img"></div>
+            </div>
+            <div class="data-acount">
+                <p class="fName"></p>
+                <p class="sName"></p>
+                <p class="eMail"></p>
+                <p class="proF"></p>
+                <hr />
+            </div>
+            <div class="sign-out">
+                <form name="sign-out">
+                    <input type="submit" value="Sign Out" />
+                </form>
+            </div>
+            <div class="footer">
+                <div class="icons"><i class="uil uil-facebook-f"></i></div>
+                <div class="icons"><i class="uil uil-github-alt"></i></div>
+                <div class="icons"><i class="uil uil-linkedin-alt"></i></div>
+            </div>
         </div>
-        <div class="data-acount">
-          <p class="fName"></p>
-          <p class="sName"></p>
-          <p class="eMail"></p>
-          <p class="proF"></p>
-          <hr />
-        </div>
-
-        <div class="sign-out">
-          <form name="sign-out">
-            <input type="submit" value="Sign Out" />
-          </form>
-        </div>
-        <div class="footer">
-          <div class="icons"><i class="uil uil-facebook-f"></i></div>
-          <div class="icons"><i class="uil uil-github-alt"></i></div>
-          <div class="icons"><i class="uil uil-linkedin-alt"></i></div>
-        </div>
-      </div>
     </div>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>

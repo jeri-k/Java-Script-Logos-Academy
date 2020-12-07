@@ -40,7 +40,8 @@
 
 }
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
     width: 400px;
     height: 30px;
     padding-left: 10px;
@@ -96,15 +97,14 @@ form p {
 }
 
 
-input[type=submit] {
-    width: 409px;
-    height: 35px;
+input[value='Sign Up'] {
+    width: 410px;
+    height: 40px;
     border-radius: 5px;
     margin-top: 20px;
     background: green;
-    font-weight: bold;
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
 
 }
 
@@ -202,10 +202,17 @@ i {
     height: 90px;
 }
 
-input[type=submit] {
-    background: #2ca22c;
-    color: white;
-    width: 90px;
-    height: 30px;
+.fName,
+.sName {
+    display: inline-block;
     font-weight: bold;
+}
+
+input[value='Sign Out'] {
+    background: white;
+    border: 1px green solid;
+    color: green;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
 }
