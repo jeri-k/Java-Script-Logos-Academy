@@ -206,6 +206,11 @@ i {
 .sName {
     display: inline-block;
     font-weight: bold;
+    font-family: sans-serif;
+}
+.eMail,.proF{
+        font-family: sans-serif;
+
 }
 
 input[value='Sign Out'] {

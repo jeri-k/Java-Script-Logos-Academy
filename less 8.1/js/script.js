@@ -29,8 +29,6 @@ sub.submit.addEventListener("click", (e) => {
     valFirstName()
     valSecondName()
     valEmail()
-
-
 })
 
 //-------Радіо при кліку
@@ -44,7 +42,6 @@ function clikRadio() {
         document.querySelector('.add-img').classList.remove('image-woman')
 
         document.querySelector('.add-img').classList.add('image-men')
-
     }
 }
 
@@ -96,11 +93,11 @@ function valSecondName() {
 }
 
 function valEmail() {
-    if (emailAddress.line3.value == !'@') {
-        outUp.style.display = 'block'
-        alert('Plese enter valid email')
-    } else {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(emailAddress.line3.value)) {
         eMail.textContent = emailAddress.line3.value
-
+        return (true)
     }
+    alert("You have entered an invalid email address!")
+    outUp.style.display = 'block'
+    return (false)
 }
