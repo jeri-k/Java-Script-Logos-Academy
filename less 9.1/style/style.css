@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    height: 800px;
+    background: rgb(0, 0, 4);
+    background: linear-gradient(0deg, rgba(0, 0, 4, 1) 46%, rgba(255, 255, 255, 1) 46%, rgba(255, 255, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.pencil-block {
+    width: 200px;
+    height: 670px;
+    background: url(../img/pen.png) no-repeat center;
+    background-size: 200%;
+}
+
+.table-block {
+    width: 900px;
+    height: 670px;
+    background: url(../img/pn.png) 100% no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.total-box {
+    width: 740px;
+    height: 537px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.check-box {
+    width: 365px;
+    height: 537px;
+    background: white;
+    padding: 30px 0 0 30px;
+}
+
+.add-box {
+    width: 365px;
+    height: 537px;
+    background: white;
+    margin-left: 10px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text {
+    color: chocolate;
+    letter-spacing: 1px
+}
+
+form[name='enterText'] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type=text] {
+    width: 200px;
+    padding-left: 5px;
+    outline: none;
+    height: 25px;
+    border: none;
+    border-bottom: 1px black solid;
+}
+
+input[type=button] {
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+form[name='box-check'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.newLab {
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.warning {
+    border-radius: 30px;
+    width: 700px;
+    height: 100px;
+    background: rgb(236, 104, 104);
+    position: absolute;
+    margin: -350px 0 0 180px;
+    opacity: 0.8;
+    display: none;
+}
+
+.warning1 {
+    border-radius: 30px;
+    width: 700px;
+    height: 100px;
+    background: rgb(236, 104, 104);
+    position: absolute;
+    margin: -350px 0 0 180px;
+    opacity: 0.8;
+    display: none;
+}
+
+.text-content {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    color: black;
+font-weight: bold;
+}
+
+.close, .close1 {
+    position: absolute;
+    left: 660px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.close:hover, .close1:hover {
+    opacity: 1;
+}
+
+.close:before, .close:after, .close1::before, .close1::after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: white;
+}
+
+.close:before, .close1::before {
+    transform: rotate(45deg);
+}
+
+.close:after, .close1::after {
+    transform: rotate(-45deg);
+}

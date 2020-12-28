@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./style/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="warning">
+                <div class="text-content">Попередження! Пусте поле не можна додати!!!!!!</div>
+                <div class="close"></div>
+            </div>
+            <div class="warning1">
+                <div class="text-content">Попередження! Останій task із спису видалити не можна!!!!!!</div>
+                <div class="close1"></div>
+            </div>
+            <div class="pencil-block"></div>
+            <div class="table-block">
+                <div class="total-box">
+                    <div class="check-box">
+                        <div class="title-text">Список завдань</div>
+                        <div class="check-area">
+                            <form name="box-check" id="f1">
+                                <label class='newLab'><input type="checkbox" id='check-html'>HTML5</label>
+                                <label class='newLab'><input type="checkbox" id='check-angul'>Angular</label>
+                                <label class='newLab'><input type="checkbox" id='check-css'>CSS</label>
+                                <label class='newLab'><input type="checkbox" id='check-js'>JavaScript</label>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="add-box">
+                        <div class="title-text">Додати нове завдання</div>
+                        <form name='enterText'>
+                            <input type="text" id="text" required autofocus>
+                            <input type="button" onclick='addNewTask()' value="Додати">
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script/script.js" charset="utf-8"></script>
+    </body>
+</html>
