@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.block {
+    height: 300px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin: 20px 0;
+    padding: 20px;
+    position: relative
+}
+
+.edit-box, .style-box {
+    display: none;
+}
+
+.edit-area {
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+.show {
+    display: block;
+}
+
+.show-flex {
+    display: flex;
+}
+
+.colors {
+    width: 150px;
+    height: 150px;
+    outline: 1px solid black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.color-box:nth-of-type(1) {
+    background-color: red;
+}
+
+.color-box:nth-of-type(2) {
+    background-color: green;
+}
+
+.color-box:nth-of-type(3) {
+    background-color: blue;
+}
+
+.color-box:nth-of-type(4) {
+    background-color: pink;
+}
+
+.color-box:nth-of-type(5) {
+    background-color: yellow;
+}
+
+.color-box:nth-of-type(6) {
+    background-color: darkred;
+}
+
+.color-box:nth-of-type(7) {
+    background-color: lightblue;
+}
+
+.color-box:nth-of-type(8) {
+    background-color: orange;
+}
+
+.color-box:nth-of-type(9) {
+    background-color: rosybrown;
+}
+
+.hide-text, .hide {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cursive {
+    font-style: italic
+}

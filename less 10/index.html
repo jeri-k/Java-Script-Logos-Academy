@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/main.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="block top-box">
+                <p>Lorem ipsum dolor, sit amet.</p>
+                <p>Lorem ipsum dolor, sit amet.</p>
+                <p>Lorem ipsum dolor, sit amet.</p>
+                <p>Lorem ipsum dolor, sit amet.</p>
+                <p>Lorem ipsum dolor, sit amet.</p>
+            </div>
+            <div class="center-box">
+                <input type="button" value="Edit" class='btn-edit'>
+                <input type="button" value="Style" class="btn-style">
+            </div>
+            <div class="block bottom-box">
+                <div class="edit-box">
+                    <textarea class="edit-area"></textarea>
+                    <input type="button" value="add" class='btn-add'>
+                    <input type="button" value='save' class="btn-save">
+
+                </div>
+                <div class="style-box">
+                    <form name='font-box'>
+                        <div class="font-size">
+                            <h2>Font Size:</h2>
+                            <label><input type="radio" name='rad' value='12px' class='font-size-radio'>12px</label>
+                            <label><input type="radio" name='rad' value='14px' class='font-size-radio' checked>14px</label>
+                            <label><input type="radio" name='rad' value='16px' class='font-size-radio'>16px</label>
+                            <label><input type="radio" name='rad' value='18px' class='font-size-radio'>18px</label>
+                            <label><input type="radio" name='rad' value='20px' class='font-size-radio'>20px</label>
+
+                        </div>
+                        <div class="font-family">
+                            <h2>Font Family</h2>
+                            <select class="font-family">
+                                <option value="">Choose option</option>
+                                <option value="cursive">cursive</option>
+                                <option value="fantasy">fantasy</option>
+                                <option value="monospace">monospace</option>
+                                <option value="sans-serif">sans-serif</option>
+                            </select>
+                        </div>
+                        <div class="colors-box">
+                            <input type="button" value="Color of text" class='btn-text-color'>
+                            <input type="button" value="Background color" class='btn-bg-color'>
+                            <div class="colors hide">
+                                <div class="color-box">
+                                    <p class='hide-text'>red</p>
+                                </div>
+                                <div class="color-box">
+                                    <p class='hide-text'>green</p>
+                                </div>
+                                <div class="color-box">
+                                    <p class='hide-text'>blue</p>
+                                </div>
+                                <div class="color-box">
+                                    <p class='hide-text'>pink</p>
+                                </div>
+                                <div class="color-box">
+                                    <p class='hide-text'>yellow</p>
+                                </div>
+                                <div class="color-box">
+                                    <p class='hide-text'>darkred</p>
+                                </div>
+                                <div class="color-box">
+                                    <p class='hide-text'>lightblue</p>
+                                </div>
+                                <div class="color-box">
+                                    <p class='hide-text'>orange</p>
+                                </div>
+                                <div class="color-box">
+                                    <p class='hide-text'>rosybrown</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="style">
+                            <label>
+                                <input type="checkbox" class="check-bold">Bold text</label>
+                            <label>
+                                <input type="checkbox" class="check-cursive">Cursive text</label>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>
