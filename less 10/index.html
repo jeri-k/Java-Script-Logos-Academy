@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/main.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="container">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first show">
             <div class="block top-box">
                 <p>Lorem ipsum dolor, sit amet.</p>
                 <p>Lorem ipsum dolor, sit amet.</p>
@@ -16,26 +19,37 @@
                 <p>Lorem ipsum dolor, sit amet.</p>
             </div>
             <div class="center-box">
-                <input type="button" value="Edit" class='btn-edit'>
-                <input type="button" value="Style" class="btn-style">
+                <input type="button" value="Edit" class="btn-edit shadow" />
+                <input type="button" value="Style" class="btn-style shadow" />
             </div>
             <div class="block bottom-box">
                 <div class="edit-box">
                     <textarea class="edit-area"></textarea>
-                    <input type="button" value="add" class='btn-add'>
-                    <input type="button" value='save' class="btn-save">
-
+                    <input type="button" value="add" class="btn-add shadow" />
+                    <input type="button" value="save" class="btn-save shadow" />
+                    <input type="button" value="clear" class="btn-clear shadow" />
                 </div>
                 <div class="style-box">
-                    <form name='font-box'>
+                    <form name="font-box">
                         <div class="font-size">
                             <h2>Font Size:</h2>
-                            <label><input type="radio" name='rad' value='12px' class='font-size-radio'>12px</label>
-                            <label><input type="radio" name='rad' value='14px' class='font-size-radio' checked>14px</label>
-                            <label><input type="radio" name='rad' value='16px' class='font-size-radio'>16px</label>
-                            <label><input type="radio" name='rad' value='18px' class='font-size-radio'>18px</label>
-                            <label><input type="radio" name='rad' value='20px' class='font-size-radio'>20px</label>
-
+                            <label>
+                                <input type="radio" name="rad" value="12px" class="font-size-radio" /><span>12px</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rad" value="14px" class="font-size-radio" checked />
+                                <span>14px</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rad" value="16px" class="font-size-radio" /><span>16px</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rad" value="18px" class="font-size-radio" /><span>18px</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rad" value="20px" class="font-size-radio" />
+                                <span>20px</span>
+                            </label>
                         </div>
                         <div class="font-family">
                             <h2>Font Family</h2>
@@ -48,49 +62,121 @@
                             </select>
                         </div>
                         <div class="colors-box">
-                            <input type="button" value="Color of text" class='btn-text-color'>
-                            <input type="button" value="Background color" class='btn-bg-color'>
+                            <h2>Colors:</h2>
+                            <input type="button" value="Color of text" class="btn-text-color" />
+                            <input type="button" value="Background color" class="btn_bg_color" />
                             <div class="colors hide">
-                                <div class="color-box">
-                                    <p class='hide-text'>red</p>
-                                </div>
-                                <div class="color-box">
-                                    <p class='hide-text'>green</p>
-                                </div>
-                                <div class="color-box">
-                                    <p class='hide-text'>blue</p>
-                                </div>
-                                <div class="color-box">
-                                    <p class='hide-text'>pink</p>
-                                </div>
-                                <div class="color-box">
-                                    <p class='hide-text'>yellow</p>
-                                </div>
-                                <div class="color-box">
-                                    <p class='hide-text'>darkred</p>
-                                </div>
-                                <div class="color-box">
-                                    <p class='hide-text'>lightblue</p>
-                                </div>
-                                <div class="color-box">
-                                    <p class='hide-text'>orange</p>
-                                </div>
-                                <div class="color-box">
-                                    <p class='hide-text'>rosybrown</p>
-                                </div>
+                                <div class="color-box" data-color="red"></div>
+                                <div class="color-box" data-color="green"></div>
+                                <div class="color-box" data-color="blue"></div>
+                                <div class="color-box" data-color="pink"></div>
+                                <div class="color-box" data-color="yellow"></div>
+                                <div class="color-box" data-color="darkred"></div>
+                                <div class="color-box" data-color="lightblue"></div>
+                                <div class="color-box" data-color="orange"></div>
+                                <div class="color-box" data-color="rosybrown"></div>
+                            </div>
+                            <div class="bg-colors hide">
+                                <div class="color-box" data-color="red"></div>
+                                <div class="color-box" data-color="green"></div>
+                                <div class="color-box" data-color="blue"></div>
+                                <div class="color-box" data-color="pink"></div>
+                                <div class="color-box" data-color="yellow"></div>
+                                <div class="color-box" data-color="darkred"></div>
+                                <div class="color-box" data-color="lightblue"></div>
+                                <div class="color-box" data-color="orange"></div>
+                                <div class="color-box" data-color="rosybrown"></div>
                             </div>
                         </div>
                         <div class="style">
+                            <h2>Style:</h2>
                             <label>
-                                <input type="checkbox" class="check-bold">Bold text</label>
+                                <input type="checkbox" class="check-bold" />
+                                <span>Bold text</span>
+                            </label>
                             <label>
-                                <input type="checkbox" class="check-cursive">Cursive text</label>
-
+                                <input type="checkbox" class="check-cursive" />
+                                <span>Cursive text</span>
+                            </label>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <script src="script/script.js"></script>
-    </body>
+        <div class="second">
+            <div class="block-resize">
+                <h2>Choose what you want:</h2>
+                <form class="show">
+                    <label>
+                        <input type="radio" name="choose" id="check-1" value="table" />table</label>
+                    <label>
+                        <input type="radio" name="choose" id="check-2" value="list" />list</label>
+                </form>
+                <div class="create-list hide">
+                    <form name="form-list">
+                        <label>
+                            <span>Count Li:</span>
+                            <input type="text" name="count" placeholder='Count Li' />
+                        </label>
+                        <label>
+                            <span>Type of marks:</span>
+                            <select name="type">
+                                <option value="citcle">citcle</option>
+                                <option value="disc">disc</option>
+                                <option value="square">square</option>
+                            </select></label>
+                        <input type="button" value="Create list" name="create" class="btn-create-list" />
+                    </form>
+                </div>
+                <div class="create-table hide">
+                    <form name="form-table">
+                        <label>
+                            <span>Count TR:</span>
+                            <input type="text" name="count_tr" placeholder='Count TR' />
+                        </label>
+                        <label>
+                            <span>Count TD:</span>
+                            <input type="text" name="count_td" placeholder='Count TD' />
+                        </label>
+                        <h2>Add style to your table:</h2>
+                        <label>
+                            <span>Width of TD:</span>
+                            <input type="text" name="width_of_td" placeholder='Width of TD' />
+                        </label>
+                        <label>
+                            <span>Height of TD:</span>
+                            <input type="text" name="height_of_td" placeholder='Height of TD' />
+                        </label>
+                        <div class="border-style">
+                            <label>
+                                <span class='style_b'>Width of border:</span>
+                                <input type="text" name="width_of_border" placeholder="Width" />
+                            </label>
+                            <label>
+                                <span class='style_b'>Type of border:</span>
+                                <select name="type_of_border">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                </select></label>
+                            <label>
+                                <span class='style_b'>Color of border:</span>
+                                <select name="color_of_border">
+                                    <option value="black">black</option>
+                                    <option value="red">red</option>
+                                    <option value="green">green</option>
+                                    <option value="orange">orange</option>
+                                </select>
+                            </label>
+                        </div>
+                        <input type="button" value="Create table" class="btn-create-table" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
 </html>
