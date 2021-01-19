@@ -1,0 +1,49 @@
+@import url(font.css);
+
+* {
+    font-family: 'digital-7.ttf';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(20, 101, 128);
+}
+
+.containr {
+    width: 70%;
+    margin: 0 auto;
+    height: 800px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+.stopwatch,
+.timer,
+.data-hours {
+    border: 1px solid red;
+    width: 100%;
+    height: 220px;
+}
+
+.data-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.oclock {
+    font-size: 100px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+
+}
