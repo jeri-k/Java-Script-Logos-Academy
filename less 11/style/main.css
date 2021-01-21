@@ -1,39 +1,41 @@
 @import url(font.css);
-
 * {
     font-family: 'digital-7.ttf';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: rgb(20, 101, 128);
+    background-color: rgb(2, 0, 22);
 }
 
 .containr {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     height: 800px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
-
-
-.stopwatch,
-.timer,
-.data-hours {
-    border: 1px solid red;
+.stopwatch, .timer, .data-hours {
+    border: 1px solid gray;
     width: 100%;
     height: 220px;
 }
 
 .data-hours {
+    background-color: rgb(2, 0, 22);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.stopwatch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .data {
@@ -45,5 +47,103 @@
     font-size: 100px;
     letter-spacing: 2px;
     margin-top: 10px;
+}
 
+.panel-second {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seconds {
+    margin-top: 30px;
+    font-size: 70px;
+}
+
+.area-second {
+    padding: 10px;
+    text-align: center;
+    width: 320px;
+    height: 200px;
+    border: 1px solid rgb(100, 100, 100);
+    margin-right: 100px;
+}
+
+.start, .loop, .stop, .reset {
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    outline: none;
+    border: 1px solid rgb(92, 92, 92);
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around
+}
+
+.one_block {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.big-num {
+    font-size: 80px;
+}
+
+.txt {
+    font-size: 20px;
+}
+
+.two {
+    margin-top: 10px
+}
+
+.minus {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(92, 92, 92);
+    font-size: 30px;
+    outline: none;
+}
+
+.plus {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(92, 92, 92);
+    font-size: 30px;
+    outline: none;
+}
+
+.time {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp {
+    font-size: 80px
+}
+
+.stopT, .resetT, .startT {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 25px;
+    outline: none;
+    border: 1px solid rgb(92, 92, 92);
+}
+
+.hover:hover {
+    border: 1px solid rgb(255, 255, 255);
 }
