@@ -1,44 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/stil.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
 
 <body>
-
     <div class="box">
-        <h1>Please sing up</h1>
-        <form>
-            <div class="box__input">
-                <input type="text" class="first__Name" required>
-                <label>First name</label>
+        <h1>Please Sing Up</h1>
+        <form action="">
+            <div class="box_input">
+                <input type="text" class="first_name" required>
+                <div class="lab_im">First name</div>
+                <div class="icon1 "></div>
+                <div class="popup1">Please provide a valid First name!</div>
             </div>
-            <div class="box__input">
-                <input type="text" class="last__Name" required>
-                <label>Last name</label>
+            <div class="box_input">
+                <input type="text" class="last_name" required>
+                <div class="lab_im">Last name</div>
+                <div class="icon2"></div>
+                <div class="popup2">Please provide a valid Last name!</div>
             </div>
-            <div class="box__input">
-                <input type="text" class="email__Address" required>
-                <label>Email address</label>
+            <div class="box_input">
+                <input type="text" class="email" required>
+                <div class="lab_im">Email address</div>
+                <div class="icon3"></div>
+                <div class="popup3">Please provide a valid Email address!</div>
             </div>
-            <div class="box__input">
-                <input type="text" class="pass__word" required>
-                <label>Password</label>
+            <div class="box_input">
+                <input type="password" class="passw" required>
+                <div class="lab_im">Password</div>
+                <div class="icon4"></div>
+                <div class="popup4">Please provide a valid Password!</div>
             </div>
-            <div class="box__input">
-                <input type="checkbox" class="check">
-                <span>I agree to privacy policy</span>
+            <div class="box_input">
+                <label class="chek"><input type="checkbox" class="checke">
+                I agree with Privacy Policy</label>
             </div>
-            <div class="box__input">
-                <input type="submit" value="Sing Up" class="sub">
+            <div class="box_input">
+                <input type="submit" value="Sing Up" class="bt_sub" disabled>
             </div>
+
         </form>
     </div>
-    <script src="script/script.js"></script>
+    <div class="box_opacyti">
+    </div>
+    <div class="box_hidden">
+        <div class="color_one"><i class="uil uil-check-circle "></i></div>
+        <div class="color_two">
+            <div class="title">Great!</div>
+            <div class="text">You account has been created successfully.</div>
+            <div class="bottom">
+                <input type="submit" value="Start Exploring" class="btn_bac">
+                <span><i class="uil uil-arrow-right"></i></span>
+            </div>
+        </div>
+    </div>
+    <script src="script/script.js">
+    </script>
 </body>
 
 </html>
