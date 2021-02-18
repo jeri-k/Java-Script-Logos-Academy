@@ -126,7 +126,7 @@ function goTime() {
             }
         }
 
-        getS('.seconds').innerHTML = `${hours}:${min}:${sec}:${milsec+'0'}`
+        getS('.seconds').innerHTML = `${hours}:${min}:${sec}:${milsec + '0'}`
     }, 100)
 }
 
@@ -196,7 +196,7 @@ getS('.resetT').addEventListener('click', function () {
     leftNum = 0;
     rightNum = 0;
     document.querySelector('.left').innerHTML = '00';
-    document.querySelector('.right', ).innerHTML = '00';
+    document.querySelector('.right',).innerHTML = '00';
     getS('.startT').classList.remove('hover')
     getS('.resetT').classList.add('hover')
     getS('.stopT').classList.remove('hover')

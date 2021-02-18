@@ -1,26 +1,26 @@
 let getS = selector => document.querySelector(selector);
 
-let loginValid = /^\w+(?=.*\d).{4,}$/;
+let loginValid = /^\w{4,16}$/;
 let passwordValid = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,}$/;
 let emailValid = /^\w+([-.\w+])*@([a-z]+)\.(com|ru|net|ua|org)$/;
 let arrN = [];
 let indexUser;
 
-getS('.log_in').oninput = function () {
+getS('.log_in').oninput = function() {
     if (loginValid.test(getS('.log_in').value)) {
         this.style.border = '2px solid green'
     } else {
         this.style.border = '2px solid red'
     }
 }
-getS('.pass_in').oninput = function () {
+getS('.pass_in').oninput = function() {
     if (passwordValid.test(getS('.pass_in').value)) {
         this.style.border = '2px solid green'
     } else {
         this.style.border = '2px solid red'
     }
 }
-getS('.email_in').oninput = function () {
+getS('.email_in').oninput = function() {
     if (emailValid.test(getS('.email_in').value)) {
         this.style.border = '2px solid green'
     } else {
@@ -28,7 +28,7 @@ getS('.email_in').oninput = function () {
     }
 }
 
-getS('.btn_add').onclick = function () {
+getS('.btn_add').onclick = function() {
     if (loginValid.test(getS('.log_in').value) && passwordValid.test(getS('.pass_in').value) && emailValid.test(getS('.email_in').value)) {
         let newObj = {
             login: getS('.log_in').value,
@@ -101,13 +101,13 @@ function render() {
         tr.append(td4);
         tr.append(td5);
         tr.append(td6);
-        td6.onclick = function () {
+        td6.onclick = function() {
             this.parentElement.remove();
             arrN.splice(i, 1);
             console.log(arrN);
             render();
         }
-        td5.onclick = function () {
+        td5.onclick = function() {
             getS('.log_in').value = td2.innerHTML;
             getS('.pass_in').value = td3.innerHTML;
             getS('.email_in').value = td4.innerHTML;
@@ -120,7 +120,7 @@ function render() {
 }
 
 
-getS('.btn_edit').onclick = function () {
+getS('.btn_edit').onclick = function() {
     if (loginValid.test(getS('.log_in').value) && passwordValid.test(getS('.pass_in').value) && emailValid.test(getS('.email_in').value)) {
         let newObj = {
             login: getS('.log_in').value,
@@ -141,11 +141,3 @@ getS('.btn_edit').onclick = function () {
 
     }
 }
-
-
-
-
-
-
-
-
