@@ -1,0 +1,68 @@
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .wraper {
+        width: 800px;
+        height: 180px;
+        margin: 5px 295px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+    }
+    
+    .box {
+        width: 150px;
+        height: 150px;
+        position: relative;
+    }
+    
+    .item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        cursor: pointer;
+    }
+    
+    .color1 {
+        background-color: gold;
+    }
+    
+    .color2 {
+        background-color: bisque;
+    }
+    
+    .color3 {
+        background-color: teal;
+    }
+    
+    .color4 {
+        background-color: lightcoral;
+    }
+    
+    .color5 {
+        background-color: plum;
+    }
+    
+    .modal_container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    
+    .modal {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        display: none;
+        cursor: pointer;
+        z-index: 99;
+    }
